@@ -1,8 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Category, Photo
 
 # Create your views here.
 # creating some function based views here
+
 
 def gallery(request):
     category = request.GET.get('category')

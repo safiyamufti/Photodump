@@ -12,16 +12,16 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
-</body class="m-5">
-<div class="container">
+</body class="m-5" >
+<div class="container ">
         <div class="row">
-            <div class="col-md-3"> 
+            <div class="col-md-2"> 
               {% if request.user.is_authenticated %}
-                <p> hello {{request.user}} !! </p>
+                <h5> hello {{request.user}} :) </h5>
                 {% endif %}
                 <div class="card">
                     <div class="card-header">
-                        Categories
+                        categories
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
@@ -43,19 +43,20 @@
             </div>
 
             <div class="col-md-9"> 
-            <h3> photodump! </h3>
+            <style> h1 { text-align: center; } </style>
+            <h1 > photodump! </h1>
              <div class="row">
 
                     {% for photo in photos %}
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="card my-2">
                             <img class="image-thumbnail" 
                             src="{{photo.image.url}}" alt="Card image thumbnail">
 
                             <div class="card-body">
-                                <small>Category: {{photo.category.name}}</small>
+                                <small>category: {{photo.category.name}}</small>
                             </div>
-                            <a href="{% url 'photo' photo.id %}" class="btn btn-outline-dark btn-sm m-1">View</a>
+                            <a href="{% url 'photo' photo.id %}" class="btn btn-outline-dark btn-sm m-1">view</a>
                         </div>
                     </div>
                     {% empty %}
