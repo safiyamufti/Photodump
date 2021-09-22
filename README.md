@@ -2,8 +2,8 @@
 
 * 🔨 This app is built with Python, HTML, Django, SQLite3 (and AWS(S3))
 * ✨ Developed for the Winter 2022 - Shopify Developer Intern Challenge 
-* 💡 You can add (aka dump!) your photos, and add category fields
-* 🔎 Photos added can be searched/viewed by photo category
+* 💡 You can add (aka dump a photo!) your photos, and add category fields
+* 🔎 Photos added can be searched/viewed by photo category by clicking on the category in the list
 
 
 
